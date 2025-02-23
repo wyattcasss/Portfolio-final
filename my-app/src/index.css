@@ -1,14 +1,83 @@
+/* Full-page background */
 body {
+  overscroll-behavior: none;
   margin: 0;
-  background-color: #1A3636;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #161b22, #2d3d50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Frosted glass container with an organic flowing effect */
+.glass-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  padding: 40px;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Base animated pseudo-elements */
+.glass-container::before,
+.glass-container::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 250%;
+  height: 250%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 10%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 300% 300%;
+  animation: dustFlow 5s infinite ease-in-out alternate;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.glass-container::after {
+  animation-duration: 7s;
+  animation-direction: alternate-reverse;
+  opacity: 0.4;
+}
+
+/* Hover state: simulate a change in animation (as if the dust were shifting in response) */
+.glass-container:hover::before,
+.glass-container:hover::after {
+  animation: dustFlowHover 3s infinite ease-in-out alternate;
+}
+
+/* Base keyframes animation */
+@keyframes dustFlow {
+  0% {
+    transform: translate(-10px, -10px) scale(1.2) rotate(0deg);
+  }
+  50% {
+    transform: translate(10px, 15px) scale(1) rotate(20deg);
+  }
+  100% {
+    transform: translate(-5px, -5px) scale(1.1) rotate(-20deg);
+  }
+}
+
+/* Hover keyframes animation to simulate a mouse-responsive shift */
+@keyframes dustFlowHover {
+  0% {
+    transform: translate(-20px, -20px) scale(1.2) rotate(0deg);
+  }
+  50% {
+    transform: translate(20px, 25px) scale(1) rotate(20deg);
+  }
+  100% {
+    transform: translate(-10px, -10px) scale(1.1) rotate(-20deg);
+  }
 }
