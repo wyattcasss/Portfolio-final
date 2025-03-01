@@ -45,12 +45,19 @@ function App() {
         <div className="sub-heading">📍Toronto, Canada 🇨🇦</div>
         <p className = "Paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-        {/* GitHub Button */}
-        <button 
-          className="GITHUBBUTTON" 
-          onClick={() => window.open("https://github.com/wyattcasss", "_blank")}
-        >
+       
+        <button className="GITHUBBUTTON" onClick={() => window.open("https://github.com/wyattcasss", "_blank")}>
           GitHub
+        </button>
+
+        <button className="linkin" onClick={() => window.open("https://example.com/live", "_blank")}>
+          LinkedIn
+        </button>
+        <button className="linkin" onClick={() => window.open("mailto:Wyatt.cassiotis@gmail.com", "_blank")}>
+          Email
+        </button>
+        <button className="linkin" onClick={() => window.open("ttps://example.com/live", "_blank")}>
+          Resume
         </button>
         <div className="project-heading">MY PROJECTS</div>
         <div className="project-card-container">
