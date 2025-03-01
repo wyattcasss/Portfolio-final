@@ -12,6 +12,22 @@ const projects = [
     githubLink: "https://github.com/wyattcasss/ValorantML"
   },
   {
+    title: "Virtual Pet Game",
+    description: "A project built using React, Node.js, and MongoDB.",
+    tech: ["Python", "Data Sets"],
+    image: "https://via.placeholder.com/300",
+    liveLink: "https://example.com/live",
+    githubLink: "https://github.com/wyattcasss/ValorantML"
+  },
+  {
+    title: "Valorant ML",
+    description: "A project built using React, Node.js, and MongoDB.",
+    tech: ["Python", "Data Sets"],
+    image: "https://via.placeholder.com/300",
+    liveLink: "https://example.com/live",
+    githubLink: "https://github.com/wyattcasss/ValorantML"
+  },
+  {
     title: "Valorant ML",
     description: "A project built using React, Node.js, and MongoDB.",
     tech: ["Python", "Data Sets"],

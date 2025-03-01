@@ -11,8 +11,8 @@
 .sub-heading {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
                "Helvetica Neue", Arial, sans-serif;
-  margin-left: 5.75in;
   margin-top: 5px;
+  text-align: center;
   letter-spacing: 0.05em;  /* Adds spacing between letters */
   font-size: 1.5rem;
   color: #cbd5e1;
@@ -20,11 +20,10 @@
 }
 .project-card-container {
   display: flex;
-  margin-top: 20px;
-  margin-left: 4in;
+  margin: 20px auto; /* Centers the container horizontally with 20px top/bottom margin */
   flex-wrap: wrap; /* Allows wrapping */
   gap: 2px; /* Reduced gap between cards */
-  justify-content: center; /* Centers the items */
+  justify-content: center; /* Centers the items within the container */
   width: calc(50% - 10px); /* Ensures 2 cards per row */
   min-width: 300px; /* Prevents them from becoming too small */
 }
