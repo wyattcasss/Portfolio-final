@@ -1,14 +1,14 @@
 import React from 'react';
 import ProjectCard from './ProjectCard.js';
-import './App.css';
+import './App.css'; 
 
 const projects = [
   {
     title: "Valorant ML",
     description: "A project built using React, Node.js, and MongoDB.",
     tech: ["Python", "Data Sets"],
-    image: "unnamed (6).png",
-    liveLink: "https://example.com/live",
+    image: "ML.png",
+    liveLink: "https://valorantpredict.streamlit.app/",
     githubLink: "https://github.com/wyattcasss/ValorantML"
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     description: "A project built using React, Node.js, and MongoDB.",
     tech: ["Python", "Data Sets"],
     image: "https://via.placeholder.com/300",
-    liveLink: "https://example.com/live",
+    liveLink: "https://valorantpredict.streamlit.app/",
     githubLink: "https://github.com/wyattcasss/ValorantML"
   },
   {
