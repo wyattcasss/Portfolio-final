@@ -15,8 +15,8 @@ const projects = [
     title: "Virtual Pet Game",
     description: "A project built using React, Node.js, and MongoDB.",
     tech: ["Python", "Data Sets"],
-    image: "https://via.placeholder.com/300",
-    liveLink: "https://example.com/live",
+    image: "VG.png",
+    liveLink: "https://youtu.be/d1L8Dd68ME8",
     githubLink: "https://github.com/wyattcasss/ValorantML"
   },
   {
@@ -66,7 +66,7 @@ function App() {
           GitHub
         </button>
 
-        <button className="linkin" onClick={() => window.open("https://example.com/live", "_blank")}>
+        <button className="linkin" onClick={() => window.open("//www.linkedin.com/in/wyatt-cassiotis-ba1b3b376/", "_blank")}>
           LinkedIn
         </button>
         <button className="linkin" onClick={() => window.open("mailto:Wyatt.cassiotis@gmail.com", "_blank")}>
