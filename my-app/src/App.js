@@ -1,5 +1,6 @@
 import React from 'react';
-import ProjectCard from './ProjectCard.js';
+import ProjectCard from './components/ProjectCard.js';
+import SkillsGrid from './components/SkillsGrid';
 import './App.css'; 
 
 const projects = [
@@ -59,28 +60,35 @@ function App() {
       <div className="w-full max-w-4xl">
         <div className="project-heading">Hey, I'm Wyatt Cassiotis 👋🏻</div>
         <div className="sub-heading">📍Toronto, Canada 🇨🇦</div>
-        <p className = "Paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p className="Paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
 
-       
+        </p>
+
         <button className="GITHUBBUTTON" onClick={() => window.open("https://github.com/wyattcasss", "_blank")}>
           GitHub
         </button>
-
         <button className="linkin" onClick={() => window.open("//www.linkedin.com/in/wyatt-cassiotis-ba1b3b376/", "_blank")}>
           LinkedIn
         </button>
-        <button className="linkin" onClick={() => window.open("mailto:Wyatt.cassiotis@gmail.com", "_blank")}>
+        <button className="linkin" onClick={() => window.open("mailto:wyatt.cassiotis@gmail.com", "_blank")}>
           Email
         </button>
-        <button className="linkin" onClick={() => window.open("ttps://example.com/live", "_blank")}>
+        <button className="linkin" onClick={() => window.open("https://example.com/live", "_blank")}>
           Resume
         </button>
-        <div className="project-heading">MY PROJECTS</div>
+
+        <div className="project-heading">PROJECTS</div>
         <div className="project-card-container">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
+        <SkillsGrid />
       </div>
     </div>
   );
