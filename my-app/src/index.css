@@ -14,49 +14,17 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1; /* Place it behind the content */
-  background: linear-gradient(135deg, #161b22, #2d3d50);
+  background: linear-gradient(135deg, #000000, #32363c);
   background-size: 400% 400%;
   animation: gradientShift 10s ease infinite;
 }
 
-/* Animate the gradient’s background position */
 @keyframes gradientShift {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Your frosted glass container remains the same */
-.glass-container {
-  position: relative;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
-  padding: 40px;
-  max-width: 500px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  margin: 40px auto; /* Center container horizontally and add vertical spacing */
-  z-index: 2;
-}
 
-/* Hand element overlay remains unchanged */
-.hand {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-  z-index: 3;
-  animation: handMove 5s ease-in-out infinite alternate;
-}
 
-@keyframes handMove {
-  0% {
-    transform: translateX(-50%) translateY(0) rotate(0deg);
-  }
-  100% {
-    transform: translateX(-50%) translateY(-20px) rotate(10deg);
-  }
-}
+

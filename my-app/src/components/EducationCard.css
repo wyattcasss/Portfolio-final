@@ -1,0 +1,132 @@
+.education-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  margin: 0 0 16px 0;
+  max-width: 100%;
+  margin-left: 5.3in;
+}
+
+.education-card:hover {
+
+}
+
+.education-logo-container {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background: whitesmoke;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.education-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 0px;
+}
+
+.education-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.education-degree {
+  font-size: 1.25rem;
+  color: whitesmoke;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               "Helvetica Neue", Arial, sans-serif;
+}
+
+.education-institution {
+  font-size: 1rem;
+  font-weight: 600;
+  /* Removed hardcoded color - now controlled by inline style */
+  margin: 0;
+  line-height: 1.3;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               "Helvetica Neue", Arial, sans-serif;
+}
+
+.education-timeframe {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin: 0;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               "Helvetica Neue", Arial, sans-serif;
+}
+
+.certification-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-top: 8px;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.education-section {
+  margin: 40px 0;
+  width: 100%;
+}
+
+.education-heading {
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-bottom: 24px;
+  margin-left: 5.1in;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+                 "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .education-logo-container {
+    width: 70px;
+    height: 70px;
+    margin-left: 3in;
+  }
+  
+  .education-logo {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .education-degree {
+    font-size: 1.125rem;
+  }
+  
+  .education-institution {
+    font-size: 0.9rem;
+  }
+  
+  .education-info {
+    text-align: center;
+  }
+}
