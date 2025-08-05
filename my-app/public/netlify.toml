@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"  # or your build command
+  publish = "dist"           # or your build output folder
+
+[dev]
+  command = "npm run dev"    # your local dev command
+  port = 3000               # your preferred port
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
