@@ -1,85 +1,173 @@
 import React from 'react';
 
 const SkillsGrid = () => {
-  const skills = [
-    {
-      name: 'TypeScript',
-      iconUrl: '/icons/typescript.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #64748b 20%, #031b3cff 100%)'
-      }
-    },
-    {
-      name: 'React',
-      iconUrl: '/icons/react.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #031b3cff  20%, #7c3aed 100%)'
-      }
-    },
-    {
-      name: 'Next.js',
-      iconUrl: '/icons/nextjs.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #7c3aed 20%, #64748b 100%)'
-      }
-    },
-    {
-      name: 'Tailwind',
-      iconUrl: '/icons/tailwind.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #64748b 20%, #2563eb 100%)'
-      }
-    },
-    {
-      name: 'Git',
-      iconUrl: '/icons/git.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #2563eb 20%, #031b3cff 100%)'
-      }
-    },
-    {
-      name: 'Node.js',
-      iconUrl: '/icons/nodejs.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #031b3cff 20%, #64748b 100%)'
-      }
-    },
-    {
-      name: 'Express',
-      iconUrl: '/icons/express.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #64748b 20%, #2563eb 100%)'
-      }
-    },
-    {
-      name: 'MongoDB',
-      iconUrl: '/icons/mongodb.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)'
-      }
-    },
-    {
-      name: 'PostgreSQL',
-      iconUrl: '/icons/postgresql.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #581c87 0%, #7c3aed 100%)'
-      }
-    },
-    {
-      name: 'Supabase',
-      iconUrl: '/icons/supabase.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #64748b 0%, #2563eb 100%)'
-      }
-    },
-    {
-      name: 'Firebase',
-      iconUrl: '/icons/firebase.png',
-      gradientStyle: {
-        background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)'
-      }
+const skills = [
+  // === Cloud & Serverless ===
+  {
+    name: 'AWS',
+    iconUrl: '/icons/aws.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #FF9900 20%, #232F3E 100%)'
     }
-  ];
+  },
+  {
+    name: 'DynamoDB',
+    iconUrl: '/icons/dynamodb.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #232F3E 20%, #FF9900 100%)'
+    }
+  },
+  {
+    name: 'Serverless',
+    iconUrl: '/icons/serverless.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #FF9900 20%, #64748b 100%)'
+    }
+  },
+  {
+    name: 'Hybrid Cloud',
+    iconUrl: '/icons/hybridcloud.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #232F3E 20%, #64748b 100%)'
+    }
+  },
+
+  // === Architecture & Data ===
+  {
+    name: 'Solution Architecture',
+    iconUrl: '/icons/architecture.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #581c87 20%, #232F3E 100%)'
+    }
+  },
+  {
+    name: 'Scalability',
+    iconUrl: '/icons/scalability.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #2563eb 20%, #581c87 100%)'
+    }
+  },
+  {
+    name: 'Data Engineering',
+    iconUrl: '/icons/dataeng.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #64748b 20%, #2563eb 100%)'
+    }
+  },
+  {
+    name: 'Data Management',
+    iconUrl: '/icons/datamanage.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #2563eb 20%, #7c3aed 100%)'
+    }
+  },
+
+  // === Development & Testing ===
+  {
+    name: 'Agile',
+    iconUrl: '/icons/agile.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #031b3cff 20%, #64748b 100%)'
+    }
+  },
+  {
+    name: 'Sprints Planning',
+    iconUrl: '/icons/sprint.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #64748b 20%, #031b3cff 100%)'
+    }
+  },
+  {
+    name: 'Jest',
+    iconUrl: '/icons/jest.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #2563eb 20%, #64748b 100%)'
+    }
+  },
+  {
+    name: 'Unit Testing',
+    iconUrl: '/icons/unittest.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #7c3aed 20%, #2563eb 100%)'
+    }
+  },
+
+  // === Frontend & Design ===
+  {
+    name: 'React.js',
+    iconUrl: '/icons/reactjs.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #031b3cff 20%, #7c3aed 100%)'
+    }
+  },
+  {
+    name: 'UI Components',
+    iconUrl: '/icons/uicomponents.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #7c3aed 20%, #64748b 100%)'
+    }
+  },
+  {
+    name: 'Responsive Design',
+    iconUrl: '/icons/responsive.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #64748b 20%, #2563eb 100%)'
+    }
+  },
+  {
+    name: 'CSS3 Animations',
+    iconUrl: '/icons/cssanim.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #2563eb 20%, #581c87 100%)'
+    }
+  },
+
+  // === Data Science & ML ===
+  {
+    name: 'Machine Learning',
+    iconUrl: '/icons/ml.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #FF9900 20%, #581c87 100%)'
+    }
+  },
+  {
+    name: 'RandomForest',
+    iconUrl: '/icons/randomforest.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #581c87 20%, #FF9900 100%)'
+    }
+  },
+  {
+    name: 'Scikit-learn',
+    iconUrl: '/icons/scikitlearn.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #FF9900 20%, #232F3E 100%)'
+    }
+  },
+  {
+    name: 'Streamlit',
+    iconUrl: '/icons/streamlit.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #232F3E 20%, #FF9900 100%)'
+    }
+  },
+
+  // === Languages & Patterns ===
+  {
+    name: 'OOP',
+    iconUrl: '/icons/oop.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #7c3aed 20%, #581c87 100%)'
+    }
+  },
+  {
+    name: 'Java',
+    iconUrl: '/icons/java.png',
+    gradientStyle: {
+      background: 'linear-gradient(135deg, #64748b 20%, #031b3cff 100%)'
+    }
+  }
+];
 
 const containerStyle = {
   padding: '1rem',

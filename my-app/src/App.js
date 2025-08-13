@@ -8,8 +8,8 @@ function App() {
   const projects = [
     {
       title: "Valorant ML",
-      description: "A project built using React, Node.js, and MongoDB.",
-      tech: ["Python", "Data Sets"],
+      description: "A project built using scikit-learn, RandomForest",
+      tech: ["RandomForest", "Data Sets"],
       image: "ML.png",
       liveLink: "https://valorantpredict.streamlit.app/",
       githubLink: "https://github.com/wyattcasss/ValorantML"
@@ -17,43 +17,44 @@ function App() {
     {
       title: "Virtual Pet Game",
       description: "A project built using React, Node.js, and MongoDB.",
-      tech: ["Python", "Data Sets"],
+      tech: ["Java", "Team Leadership","OOD"],
       image: "VG.png",
       liveLink: "https://youtu.be/d1L8Dd68ME8",
       githubLink: "https://github.com/wyattcasss/ValorantML"
-    },
-    {
-      title: "Valorant ML",
-      description: "A project built using React, Node.js, and MongoDB.",
-      tech: ["Python", "Data Sets"],
-      image: "https://via.placeholder.com/300",
-      liveLink: "https://example.com/live",
-      githubLink: "https://github.com/wyattcasss/ValorantML"
-    },
-    {
-      title: "Valorant ML",
-      description: "A project built using React, Node.js, and MongoDB.",
-      tech: ["Python", "Data Sets"],
-      image: "https://via.placeholder.com/300",
-      liveLink: "https://example.com/live",
-      githubLink: "https://github.com/wyattcasss/ValorantML"
-    },
-    {
-      title: "Valorant ML",
-      description: "A project built using React, Node.js, and MongoDB.",
-      tech: ["Python", "Data Sets"],
-      image: "https://via.placeholder.com/300",
-      liveLink: "https://valorantpredict.streamlit.app/",
-      githubLink: "https://github.com/wyattcasss/ValorantML"
-    },
-    {
-      title: "Valorant ML",
-      description: "A project built using React, Node.js, and MongoDB.",
-      tech: ["Python", "Data Sets"],
-      image: "https://via.placeholder.com/300",
-      liveLink: "https://example.com/live",
-      githubLink: "https://github.com/wyattcasss/ValorantML"
     }
+    //title: "Valorant ML",
+    //  description: "A project built using React, Node.js, and MongoDB.",
+    //  tech: ["Python", "Data Sets"],
+    //  image: "https://via.placeholder.com/300",
+    //  liveLink: "https://example.com/live",
+    //  githubLink: "https://github.com/wyattcasss/ValorantML"
+    //},
+    //{
+    //  title: "Valorant ML",
+    //description: "A project built using React, Node.js, and MongoDB.",
+    //  tech: ["Python", "Data Sets"],
+    //  image: "https://via.placeholder.com/300",
+    //  liveLink: "https://example.com/live",
+    //  githubLink: "https://github.com/wyattcasss/ValorantML"
+    //},
+    //{
+    //  title: "Valorant ML",
+    //  description: "A project built using React, Node.js, and MongoDB.",
+    //  tech: ["Python", "Data Sets"],
+    //  image: "https://via.placeholder.com/300",
+    //  liveLink: "https://valorantpredict.streamlit.app/",
+    //  githubLink: "https://github.com/wyattcasss/ValorantML"
+    //},
+    //{
+    //  title: "Valorant ML",
+    //  description: "A project built using React, Node.js, and MongoDB.",
+    //tech: ["Python", "Data Sets"],
+    //  image: "https://via.placeholder.com/300",
+    //  liveLink: "https://example.com/live",
+    // githubLink: "https://github.com/wyattcasss/ValorantML"
+    //}
+      
+    
   ];
 
   // Education and Certifications data
@@ -95,10 +96,7 @@ function App() {
         <div className="project-heading">Hey, I'm Wyatt Cassiotis 👋🏻</div>
         <div className="sub-heading">📍Toronto, Canada 🇨🇦</div>
         <p className="Paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua          
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua...
+          I'm a ambitious full-stack and front-end developer passionate about building dynamic, user-focused web applications using modern technologies like React, TypeScript, and Node.js. I combine strong architectural thinking in cloud solutions (AWS, Serverless) with a keen eye for responsive design and scalable data systems to deliver robust, full-cycle software solutions. With a foundation in agile practices, testing, and even machine learning, I’m driven to continuously expand my impact across both frontend innovation and full-stack engineering.
     
         </p>
 
