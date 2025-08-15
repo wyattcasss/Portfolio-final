@@ -21,14 +21,15 @@ function App() {
       image: "VG.png",
       liveLink: "https://youtu.be/d1L8Dd68ME8",
       githubLink: "https://github.com/wyattcasss/ValorantML"
-    }
-    //title: "Valorant ML",
-    //  description: "A project built using React, Node.js, and MongoDB.",
-    //  tech: ["Python", "Data Sets"],
-    //  image: "https://via.placeholder.com/300",
-    //  liveLink: "https://example.com/live",
-    //  githubLink: "https://github.com/wyattcasss/ValorantML"
-    //},
+    },
+    {
+      title: "Meta Clone",
+      description: "A clone of meta where you can see posts and post images with text that others can see with google auth signin",
+      tech: ["React.js", "firebase"],
+      image: "metaa.jpg",
+      liveLink: "https://meta-clone-de0ef.web.app/",
+      githubLink: "https://github.com/wyattcasss/Meta"
+    },
     //{
     //  title: "Valorant ML",
     //description: "A project built using React, Node.js, and MongoDB.",
