@@ -27,7 +27,7 @@ function App() {
       description: "A clone of meta where you can see posts and post images with text that others can see with google auth signin",
       tech: ["React.js", "firebase"],
       image: "metaa.jpg",
-      liveLink: "metaclone-j8szjhmdh-wyattcasss-projects.vercel.app",
+      liveLink: "https://metaclone-j8szjhmdh-wyattcasss-projects.vercel.app/",
       githubLink: "https://github.com/wyattcasss/Meta"
     },
     //{
